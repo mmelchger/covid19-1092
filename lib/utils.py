@@ -22,14 +22,38 @@ class region():
         self.City       = aCity  # auch: Landkreis
         self.Lat        = None
         self.Long       = None
+        
+        self.ValidArea          = True
+        self.ValidHospital      = True
+        self.ValidPopulation    = True
 
-        self.PopulationDensity = None
-        self.PopulationTotal   = None
-        self.PopulationMale    = None
-        self.PopulationFemale  = None
-        self.RegionIDZensus    = None
-        self.TimeSeries        = None
-        self.Action            = None
+        self.PopulationDensity  = None
+        self.PopulationTotal    = None
+        self.PopulationMale     = None
+        self.PopulationFemale   = None
+        self.RegionIDZensus     = None
+        self.TimeSeries         = None
+        self.Area               = None
+        
+        self.numHospitals       = None
+        self.numBeds            = None
+        self.Augenheilkunde     = None
+        self.Chirurgie          = None
+        self.Gynaekologie       = None
+        self.HNO                = None
+        self.Dermatologie       = None
+        self.Innere             = None
+        self.Geriatrie          = None
+        self.Kinderheilkunde    = None
+        self.Neurologie         = None
+        self.Orthopaedie        = None
+        self.Urologie           = None
+        self.Andere             = None
+        self.KinderPsy          = None
+        self.Psy                = None
+        self.PsyTherapie        = None
+
+        self.Action             = None
 
 
     def get_name(self):
