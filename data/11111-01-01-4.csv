@@ -1,0 +1,574 @@
+GENESIS-Tabelle: 11111-01-01-4
+Gebietsfläche in qkm - Stichtag 31.12. -;;;
+regionale Tiefe: Kreise und krfr. Städte;;;
+Feststellung des Gebietsstandes;;;
+;;;Gebietsfläche
+;;;qkm
+31.12.2018;DG;Deutschland;357582,00
+31.12.2018;01;  Schleswig-Holstein;15804,30
+31.12.2018;01001;      Flensburg, Kreisfreie Stadt;56,73
+31.12.2018;01002;      Kiel, Landeshauptstadt, Kreisfreie Stadt;118,65
+31.12.2018;01003;      Lübeck, Hansestadt, Kreisfreie Stadt;214,19
+31.12.2018;01004;      Neumünster, Kreisfreie Stadt;71,66
+31.12.2018;01051;      Dithmarschen, Landkreis;1428,17
+31.12.2018;01053;      Herzogtum Lauenburg, Landkreis;1263,07
+31.12.2018;01054;      Nordfriesland, Landkreis;2083,55
+31.12.2018;01055;      Ostholstein, Landkreis;1393,02
+31.12.2018;01056;      Pinneberg, Landkreis;664,25
+31.12.2018;01057;      Plön, Landkreis;1083,56
+31.12.2018;01058;      Rendsburg-Eckernförde, Landkreis;2189,79
+31.12.2018;01059;      Schleswig-Flensburg, Landkreis;2071,28
+31.12.2018;01060;      Segeberg, Landkreis;1344,47
+31.12.2018;01061;      Steinburg, Landkreis;1055,70
+31.12.2018;01062;      Stormarn, Landkreis;766,21
+31.12.2018;02;  Hamburg;755,09
+31.12.2018;03;  Niedersachsen;47709,50
+31.12.2018;031;    Braunschweig, Stat. Region;8117,03
+31.12.2018;03101;      Braunschweig, Kreisfreie Stadt;192,70
+31.12.2018;03102;      Salzgitter, Kreisfreie Stadt;224,49
+31.12.2018;03103;      Wolfsburg, Kreisfreie Stadt;204,61
+31.12.2018;03151;      Gifhorn, Landkreis;1567,45
+31.12.2018;03152;      Göttingen, Landkreis;-
+31.12.2018;03153;      Goslar, Landkreis;966,73
+31.12.2018;03154;      Helmstedt, Landkreis;676,12
+31.12.2018;03155;      Northeim, Landkreis;1268,76
+31.12.2018;03156;      Osterode am Harz, Landkreis;-
+31.12.2018;03157;      Peine, Landkreis;536,50
+31.12.2018;03158;      Wolfenbüttel, Landkreis;724,28
+31.12.2018;03159;      Göttingen, Landkreis;1755,39
+31.12.2018;032;    Hannover, Stat. Region;9064,75
+31.12.2018;03241;      Region Hannover, Landkreis;2297,13
+31.12.2018;03241001;      Hannover, Landeshauptstadt;204,30
+31.12.2018;03251;      Diepholz, Landkreis;1990,99
+31.12.2018;03252;      Hameln-Pyrmont, Landkreis;797,53
+31.12.2018;03254;      Hildesheim, Landkreis;1208,35
+31.12.2018;03255;      Holzminden, Landkreis;694,27
+31.12.2018;03256;      Nienburg (Weser), Landkreis;1400,82
+31.12.2018;03257;      Schaumburg, Landkreis;675,66
+31.12.2018;033;    Lüneburg, Stat. Region;15541,48
+31.12.2018;03351;      Celle, Landkreis;1550,82
+31.12.2018;03352;      Cuxhaven, Landkreis;2058,96
+31.12.2018;03353;      Harburg, Landkreis;1248,45
+31.12.2018;03354;      Lüchow-Dannenberg, Landkreis;1227,19
+31.12.2018;03355;      Lüneburg, Landkreis;1327,81
+31.12.2018;03356;      Osterholz, Landkreis;652,67
+31.12.2018;03357;      Rotenburg (Wümme), Landkreis;2074,78
+31.12.2018;03358;      Heidekreis, Landkreis;1881,46
+31.12.2018;03359;      Stade, Landkreis;1267,40
+31.12.2018;03360;      Uelzen, Landkreis;1462,60
+31.12.2018;03361;      Verden, Landkreis;789,34
+31.12.2018;034;    Weser-Ems, Stat. Region;14986,20
+31.12.2018;03401;      Delmenhorst, Kreisfreie Stadt;62,45
+31.12.2018;03402;      Emden, Kreisfreie Stadt;112,34
+31.12.2018;03403;      Oldenburg (Oldenburg), Kreisfreie Stadt;103,09
+31.12.2018;03404;      Osnabrück, Kreisfreie Stadt;119,80
+31.12.2018;03405;      Wilhelmshaven, Kreisfreie Stadt;107,07
+31.12.2018;03451;      Ammerland, Landkreis;730,64
+31.12.2018;03452;      Aurich, Landkreis;1287,34
+31.12.2018;03453;      Cloppenburg, Landkreis;1420,35
+31.12.2018;03454;      Emsland, Landkreis;2883,64
+31.12.2018;03455;      Friesland, Landkreis;609,54
+31.12.2018;03456;      Grafschaft Bentheim, Landkreis;981,81
+31.12.2018;03457;      Leer, Landkreis;1085,70
+31.12.2018;03458;      Oldenburg, Landkreis;1064,83
+31.12.2018;03459;      Osnabrück, Landkreis;2121,80
+31.12.2018;03460;      Vechta, Landkreis;814,20
+31.12.2018;03461;      Wesermarsch, Landkreis;824,76
+31.12.2018;03462;      Wittmund, Landkreis;656,84
+31.12.2018;04;  Bremen;419,84
+31.12.2018;04011;      Bremen, Kreisfreie Stadt;326,18
+31.12.2018;04012;      Bremerhaven, Kreisfreie Stadt;93,66
+31.12.2018;05;  Nordrhein-Westfalen;34112,31
+31.12.2018;051;    Düsseldorf, Regierungsbezirk;5292,18
+31.12.2018;05111;      Düsseldorf, Kreisfreie Stadt;217,41
+31.12.2018;05112;      Duisburg, Kreisfreie Stadt;232,80
+31.12.2018;05113;      Essen, Kreisfreie Stadt;210,34
+31.12.2018;05114;      Krefeld, Kreisfreie Stadt;137,77
+31.12.2018;05116;      Mönchengladbach, Kreisfreie Stadt;170,47
+31.12.2018;05117;      Mülheim an der Ruhr, Kreisfreie Stadt;91,28
+31.12.2018;05119;      Oberhausen, Kreisfreie Stadt;77,09
+31.12.2018;05120;      Remscheid, Kreisfreie Stadt;74,52
+31.12.2018;05122;      Solingen, Kreisfreie Stadt;89,54
+31.12.2018;05124;      Wuppertal, Kreisfreie Stadt;168,39
+31.12.2018;05154;      Kleve, Kreis;1232,99
+31.12.2018;05158;      Mettmann, Kreis;407,22
+31.12.2018;05162;      Rhein-Kreis Neuss;576,28
+31.12.2018;05166;      Viersen, Kreis;563,28
+31.12.2018;05170;      Wesel, Kreis;1042,80
+31.12.2018;053;    Köln, Regierungsbezirk;7364,06
+31.12.2018;05314;      Bonn, Kreisfreie Stadt;141,06
+31.12.2018;05315;      Köln, Kreisfreie Stadt;405,01
+31.12.2018;05316;      Leverkusen, Kreisfreie Stadt;78,87
+31.12.2018;05334;      Städteregion Aachen (einschl. Stadt Aachen);706,91
+31.12.2018;05334002;      Aachen, krfr. Stadt;160,85
+31.12.2018;05354;      Aachen, Kreis;-
+31.12.2018;05358;      Düren, Kreis;941,49
+31.12.2018;05362;      Rhein-Erft-Kreis;704,71
+31.12.2018;05366;      Euskirchen, Kreis;1248,73
+31.12.2018;05370;      Heinsberg, Kreis;627,91
+31.12.2018;05374;      Oberbergischer Kreis;918,85
+31.12.2018;05378;      Rheinisch-Bergischer Kreis;437,32
+31.12.2018;05382;      Rhein-Sieg-Kreis;1153,21
+31.12.2018;055;    Münster, Regierungsbezirk;6918,36
+31.12.2018;05512;      Bottrop, Kreisfreie Stadt;100,62
+31.12.2018;05513;      Gelsenkirchen, Kreisfreie Stadt;104,94
+31.12.2018;05515;      Münster, Kreisfreie Stadt;303,28
+31.12.2018;05554;      Borken, Kreis;1420,98
+31.12.2018;05558;      Coesfeld, Kreis;1112,05
+31.12.2018;05562;      Recklinghausen, Kreis;761,31
+31.12.2018;05566;      Steinfurt, Kreis;1795,76
+31.12.2018;05570;      Warendorf, Kreis;1319,42
+31.12.2018;057;    Detmold, Regierungsbezirk;6525,30
+31.12.2018;05711;      Bielefeld, Kreisfreie Stadt;258,83
+31.12.2018;05754;      Gütersloh, Kreis;969,21
+31.12.2018;05758;      Herford, Kreis;450,41
+31.12.2018;05762;      Höxter, Kreis;1201,42
+31.12.2018;05766;      Lippe, Kreis;1246,22
+31.12.2018;05770;      Minden-Lübbecke, Kreis;1152,42
+31.12.2018;05774;      Paderborn, Kreis;1246,80
+31.12.2018;059;    Arnsberg, Regierungsbezirk;8012,41
+31.12.2018;05911;      Bochum, Kreisfreie Stadt;145,66
+31.12.2018;05913;      Dortmund, Kreisfreie Stadt;280,71
+31.12.2018;05914;      Hagen, Kreisfreie Stadt;160,45
+31.12.2018;05915;      Hamm, Kreisfreie Stadt;226,43
+31.12.2018;05916;      Herne, Kreisfreie Stadt;51,42
+31.12.2018;05954;      Ennepe-Ruhr-Kreis;409,64
+31.12.2018;05958;      Hochsauerlandkreis;1960,17
+31.12.2018;05962;      Märkischer Kreis;1061,06
+31.12.2018;05966;      Olpe, Kreis;712,14
+31.12.2018;05970;      Siegen-Wittgenstein, Kreis;1132,89
+31.12.2018;05974;      Soest, Kreis;1328,64
+31.12.2018;05978;      Unna, Kreis;543,21
+31.12.2018;06;  Hessen;21115,66
+31.12.2018;064;    Darmstadt, Regierungsbezirk;7444,25
+31.12.2018;06411;      Darmstadt, Kreisfreie Stadt;122,07
+31.12.2018;06412;      Frankfurt am Main, Kreisfreie Stadt;248,31
+31.12.2018;06413;      Offenbach am Main, Kreisfreie Stadt;44,88
+31.12.2018;06414;      Wiesbaden, Landeshauptstadt, Kreisfreie Stadt;203,87
+31.12.2018;06431;      Bergstraße, Landkreis;719,47
+31.12.2018;06432;      Darmstadt-Dieburg, Landkreis;658,64
+31.12.2018;06433;      Groß-Gerau, Landkreis;453,03
+31.12.2018;06434;      Hochtaunuskreis;481,84
+31.12.2018;06435;      Main-Kinzig-Kreis;1397,32
+31.12.2018;06436;      Main-Taunus-Kreis;222,53
+31.12.2018;06437;      Odenwaldkreis;623,97
+31.12.2018;06438;      Offenbach, Landkreis;356,24
+31.12.2018;06439;      Rheingau-Taunus-Kreis;811,41
+31.12.2018;06440;      Wetteraukreis;1100,66
+31.12.2018;065;    Gießen, Regierungsbezirk;5380,59
+31.12.2018;06531;      Gießen, Landkreis;854,56
+31.12.2018;06532;      Lahn-Dill-Kreis;1066,30
+31.12.2018;06533;      Limburg-Weilburg, Landkreis;738,44
+31.12.2018;06534;      Marburg-Biedenkopf, Landkreis;1262,37
+31.12.2018;06535;      Vogelsbergkreis;1458,91
+31.12.2018;066;    Kassel, Regierungsbezirk;8290,83
+31.12.2018;06611;      Kassel, Kreisfreie Stadt;106,80
+31.12.2018;06631;      Fulda, Landkreis;1380,41
+31.12.2018;06632;      Hersfeld-Rotenburg, Landkreis;1097,75
+31.12.2018;06633;      Kassel, Landkreis;1293,33
+31.12.2018;06634;      Schwalm-Eder-Kreis;1539,01
+31.12.2018;06635;      Waldeck-Frankenberg, Landkreis;1848,70
+31.12.2018;06636;      Werra-Meißner-Kreis;1024,83
+31.12.2018;07;  Rheinland-Pfalz;19858,00
+31.12.2018;071;    Koblenz, Stat. Region;8074,93
+31.12.2018;07111;      Koblenz, Kreisfreie Stadt;105,25
+31.12.2018;07131;      Ahrweiler, Landkreis;787,02
+31.12.2018;07132;      Altenkirchen (Westerwald), Landkreis;642,38
+31.12.2018;07133;      Bad Kreuznach, Landkreis;863,89
+31.12.2018;07134;      Birkenfeld, Landkreis;776,83
+31.12.2018;07135;      Cochem-Zell, Landkreis;692,43
+31.12.2018;07137;      Mayen-Koblenz, Landkreis;817,73
+31.12.2018;07138;      Neuwied, Landkreis;627,06
+31.12.2018;07140;      Rhein-Hunsrück-Kreis;991,06
+31.12.2018;07141;      Rhein-Lahn-Kreis;782,24
+31.12.2018;07143;      Westerwaldkreis;989,04
+31.12.2018;072;    Trier, Stat. Region;4925,82
+31.12.2018;07211;      Trier, Kreisfreie Stadt;117,06
+31.12.2018;07231;      Bernkastel-Wittlich, Landkreis;1167,92
+31.12.2018;07232;      Eifelkreis Bitburg-Prüm;1626,95
+31.12.2018;07233;      Vulkaneifel, Landkreis;911,64
+31.12.2018;07235;      Trier-Saarburg, Landkreis;1102,26
+31.12.2018;073;    Rheinhessen-Pfalz, Stat. Region;6851,04
+31.12.2018;07311;      Frankenthal (Pfalz), Kreisfreie Stadt;43,88
+31.12.2018;07312;      Kaiserslautern, Kreisfreie Stadt;139,70
+31.12.2018;07313;      Landau in der Pfalz, Kreisfreie Stadt;82,94
+31.12.2018;07314;      Ludwigshafen am Rhein, Kreisfreie Stadt;77,43
+31.12.2018;07315;      Mainz, Kreisfreie Stadt;97,73
+31.12.2018;07316;      Neustadt an der Weinstraße, Kreisfreie Stadt;117,09
+31.12.2018;07317;      Pirmasens, Kreisfreie Stadt;61,36
+31.12.2018;07318;      Speyer, Kreisfreie Stadt;42,71
+31.12.2018;07319;      Worms, Kreisfreie Stadt;108,73
+31.12.2018;07320;      Zweibrücken, Kreisfreie Stadt;70,64
+31.12.2018;07331;      Alzey-Worms, Landkreis;588,07
+31.12.2018;07332;      Bad Dürkheim, Landkreis;594,64
+31.12.2018;07333;      Donnersbergkreis;645,41
+31.12.2018;07334;      Germersheim, Landkreis;463,32
+31.12.2018;07335;      Kaiserslautern, Landkreis;640,00
+31.12.2018;07336;      Kusel, Landkreis;573,61
+31.12.2018;07337;      Südliche Weinstraße, Landkreis;639,93
+31.12.2018;07338;      Rhein-Pfalz-Kreis;304,99
+31.12.2018;07339;      Mainz-Bingen, Landkreis;605,36
+31.12.2018;07340;      Südwestpfalz, Landkreis;953,52
+31.12.2018;08;  Baden-Württemberg, Land;35673,65
+31.12.2018;081;    Stuttgart, Regierungsbezirk;10556,85
+31.12.2018;08111;      Stuttgart, Landeshauptstadt, Stadtkreis;207,33
+31.12.2018;08115;      Böblingen, Landkreis;617,76
+31.12.2018;08116;      Esslingen, Landkreis;641,28
+31.12.2018;08117;      Göppingen, Landkreis;642,34
+31.12.2018;08118;      Ludwigsburg, Landkreis;686,77
+31.12.2018;08119;      Rems-Murr-Kreis, Landkreis;858,08
+31.12.2018;08121;      Heilbronn, Stadtkreis;99,89
+31.12.2018;08125;      Heilbronn, Landkreis;1099,91
+31.12.2018;08126;      Hohenlohekreis, Landkreis;776,76
+31.12.2018;08127;      Schwäbisch Hall, Landkreis;1484,07
+31.12.2018;08128;      Main-Tauber-Kreis, Landkreis;1304,12
+31.12.2018;08135;      Heidenheim, Landkreis;627,13
+31.12.2018;08136;      Ostalbkreis, Landkreis;1511,39
+31.12.2018;082;    Karlsruhe, Regierungsbezirk;6917,91
+31.12.2018;08211;      Baden-Baden, Stadtkreis;140,19
+31.12.2018;08212;      Karlsruhe, Stadtkreis;173,42
+31.12.2018;08215;      Karlsruhe, Landkreis;1085,29
+31.12.2018;08216;      Rastatt, Landkreis;738,43
+31.12.2018;08221;      Heidelberg, Stadtkreis;108,83
+31.12.2018;08222;      Mannheim, Stadtkreis;144,97
+31.12.2018;08225;      Neckar-Odenwald-Kreis, Landkreis;1125,95
+31.12.2018;08226;      Rhein-Neckar-Kreis, Landkreis;1061,55
+31.12.2018;08231;      Pforzheim, Stadtkreis;97,99
+31.12.2018;08235;      Calw, Landkreis;797,29
+31.12.2018;08236;      Enzkreis, Landkreis;573,60
+31.12.2018;08237;      Freudenstadt, Landkreis;870,40
+31.12.2018;083;    Freiburg, Regierungsbezirk;9346,49
+31.12.2018;08311;      Freiburg im Breisgau, Stadtkreis;153,04
+31.12.2018;08315;      Breisgau-Hochschwarzwald, Landkreis;1378,32
+31.12.2018;08316;      Emmendingen, Landkreis;679,80
+31.12.2018;08317;      Ortenaukreis, Landkreis;1850,35
+31.12.2018;08325;      Rottweil, Landkreis;769,42
+31.12.2018;08326;      Schwarzwald-Baar-Kreis, Landkreis;1025,34
+31.12.2018;08327;      Tuttlingen, Landkreis;734,38
+31.12.2018;08335;      Konstanz, Landkreis;817,98
+31.12.2018;08336;      Lörrach, Landkreis;806,72
+31.12.2018;08337;      Waldshut, Landkreis;1131,14
+31.12.2018;084;    Tübingen, Regierungsbezirk;8852,40
+31.12.2018;08415;      Reutlingen, Landkreis;1027,84
+31.12.2018;08416;      Tübingen, Landkreis;519,11
+31.12.2018;08417;      Zollernalbkreis, Landkreis;917,58
+31.12.2018;08421;      Ulm, Stadtkreis;118,68
+31.12.2018;08425;      Alb-Donau-Kreis, Landkreis;1358,55
+31.12.2018;08426;      Biberach, Landkreis;1409,52
+31.12.2018;08435;      Bodenseekreis, Landkreis;664,80
+31.12.2018;08436;      Ravensburg, Landkreis;1632,08
+31.12.2018;08437;      Sigmaringen, Landkreis;1204,23
+31.12.2018;09;  Bayern;70541,57
+31.12.2018;091;    Oberbayern, Regierungsbezirk;17529,10
+31.12.2018;09161;      Ingolstadt;133,35
+31.12.2018;09162;      München, Landeshauptstadt;310,70
+31.12.2018;09163;      Rosenheim;37,22
+31.12.2018;09171;      Altötting, Landkreis;569,28
+31.12.2018;09172;      Berchtesgadener Land, Landkreis;839,82
+31.12.2018;09173;      Bad Tölz-Wolfratshausen, Landkreis;1110,66
+31.12.2018;09174;      Dachau, Landkreis;579,16
+31.12.2018;09175;      Ebersberg, Landkreis;549,39
+31.12.2018;09176;      Eichstätt, Landkreis;1213,85
+31.12.2018;09177;      Erding, Landkreis;870,74
+31.12.2018;09178;      Freising, Landkreis;799,85
+31.12.2018;09179;      Fürstenfeldbruck, Landkreis;434,80
+31.12.2018;09180;      Garmisch-Partenkirchen, Landkreis;1012,17
+31.12.2018;09181;      Landsberg am Lech, Landkreis;804,36
+31.12.2018;09182;      Miesbach, Landkreis;866,22
+31.12.2018;09183;      Mühldorf a.Inn, Landkreis;805,33
+31.12.2018;09184;      München, Landkreis;664,25
+31.12.2018;09185;      Neuburg-Schrobenhausen, Landkreis;739,71
+31.12.2018;09186;      Pfaffenhofen a.d.Ilm, Landkreis;761,05
+31.12.2018;09187;      Rosenheim, Landkreis;1439,44
+31.12.2018;09188;      Starnberg, Landkreis;487,72
+31.12.2018;09189;      Traunstein, Landkreis;1533,76
+31.12.2018;09190;      Weilheim-Schongau, Landkreis;966,28
+31.12.2018;092;    Niederbayern, Regierungsbezirk;10325,93
+31.12.2018;09261;      Landshut;65,83
+31.12.2018;09262;      Passau;69,56
+31.12.2018;09263;      Straubing;67,59
+31.12.2018;09271;      Deggendorf, Landkreis;861,17
+31.12.2018;09272;      Freyung-Grafenau, Landkreis;983,85
+31.12.2018;09273;      Kelheim, Landkreis;1065,13
+31.12.2018;09274;      Landshut, Landkreis;1347,56
+31.12.2018;09275;      Passau, Landkreis;1530,09
+31.12.2018;09276;      Regen, Landkreis;974,78
+31.12.2018;09277;      Rottal-Inn, Landkreis;1281,20
+31.12.2018;09278;      Straubing-Bogen, Landkreis;1201,61
+31.12.2018;09279;      Dingolfing-Landau, Landkreis;877,58
+31.12.2018;093;    Oberpfalz, Regierungsbezirk;9690,12
+31.12.2018;09361;      Amberg;50,13
+31.12.2018;09362;      Regensburg;80,86
+31.12.2018;09363;      Weiden i.d.OPf.;70,57
+31.12.2018;09371;      Amberg-Sulzbach, Landkreis;1255,86
+31.12.2018;09372;      Cham, Landkreis;1526,82
+31.12.2018;09373;      Neumarkt i.d.OPf., Landkreis;1343,96
+31.12.2018;09374;      Neustadt a.d.Waldnaab, Landkreis;1427,69
+31.12.2018;09375;      Regensburg, Landkreis;1391,65
+31.12.2018;09376;      Schwandorf, Landkreis;1458,34
+31.12.2018;09377;      Tirschenreuth, Landkreis;1084,25
+31.12.2018;094;    Oberfranken, Regierungsbezirk;7231,12
+31.12.2018;09461;      Bamberg;54,62
+31.12.2018;09462;      Bayreuth;66,89
+31.12.2018;09463;      Coburg;48,29
+31.12.2018;09464;      Hof;58,02
+31.12.2018;09471;      Bamberg, Landkreis;1167,79
+31.12.2018;09472;      Bayreuth, Landkreis;1273,62
+31.12.2018;09473;      Coburg, Landkreis;590,42
+31.12.2018;09474;      Forchheim, Landkreis;642,82
+31.12.2018;09475;      Hof, Landkreis;892,52
+31.12.2018;09476;      Kronach, Landkreis;651,49
+31.12.2018;09477;      Kulmbach, Landkreis;658,33
+31.12.2018;09478;      Lichtenfels, Landkreis;519,94
+31.12.2018;09479;      Wunsiedel i.Fichtelgebirge, Landkreis;606,37
+31.12.2018;095;    Mittelfranken, Regierungsbezirk;7243,69
+31.12.2018;09561;      Ansbach;99,91
+31.12.2018;09562;      Erlangen;76,96
+31.12.2018;09563;      Fürth;63,35
+31.12.2018;09564;      Nürnberg;186,45
+31.12.2018;09565;      Schwabach;40,80
+31.12.2018;09571;      Ansbach, Landkreis;1971,33
+31.12.2018;09572;      Erlangen-Höchstadt, Landkreis;564,56
+31.12.2018;09573;      Fürth, Landkreis;307,44
+31.12.2018;09574;      Nürnberger Land, Landkreis;799,51
+31.12.2018;09575;      Neustadt a.d.Aisch-Bad Windsheim, Landkreis;1267,44
+31.12.2018;09576;      Roth, Landkreis;895,16
+31.12.2018;09577;      Weißenburg-Gunzenhausen, Landkreis;970,78
+31.12.2018;096;    Unterfranken, Regierungsbezirk;8530,08
+31.12.2018;09661;      Aschaffenburg;62,45
+31.12.2018;09662;      Schweinfurt;35,70
+31.12.2018;09663;      Würzburg;87,60
+31.12.2018;09671;      Aschaffenburg, Landkreis;698,90
+31.12.2018;09672;      Bad Kissingen, Landkreis;1136,90
+31.12.2018;09673;      Rhön-Grabfeld, Landkreis;1021,68
+31.12.2018;09674;      Haßberge, Landkreis;956,19
+31.12.2018;09675;      Kitzingen, Landkreis;684,14
+31.12.2018;09676;      Miltenberg, Landkreis;715,58
+31.12.2018;09677;      Main-Spessart, Landkreis;1321,20
+31.12.2018;09678;      Schweinfurt, Landkreis;841,39
+31.12.2018;09679;      Würzburg, Landkreis;968,35
+31.12.2018;097;    Schwaben, Regierungsbezirk;9991,54
+31.12.2018;09761;      Augsburg;146,85
+31.12.2018;09762;      Kaufbeuren;40,02
+31.12.2018;09763;      Kempten (Allgäu);63,28
+31.12.2018;09764;      Memmingen;70,11
+31.12.2018;09771;      Aichach-Friedberg, Landkreis;780,23
+31.12.2018;09772;      Augsburg, Landkreis;1070,64
+31.12.2018;09773;      Dillingen a.d.Donau, Landkreis;792,23
+31.12.2018;09774;      Günzburg, Landkreis;762,40
+31.12.2018;09775;      Neu-Ulm, Landkreis;515,84
+31.12.2018;09776;      Lindau (Bodensee), Landkreis;323,39
+31.12.2018;09777;      Ostallgäu, Landkreis;1394,43
+31.12.2018;09778;      Unterallgäu, Landkreis;1229,57
+31.12.2018;09779;      Donau-Ries, Landkreis;1274,58
+31.12.2018;09780;      Oberallgäu, Landkreis;1527,96
+31.12.2018;10;  Saarland;2571,10
+31.12.2018;10041;      Saarbrücken, Regionalverband;410,95
+31.12.2018;10041100;      Saarbrücken, Landeshauptstadt;167,52
+31.12.2018;10042;      Merzig-Wadern, Landkreis;556,66
+31.12.2018;10043;      Neunkirchen, Landkreis;249,80
+31.12.2018;10044;      Saarlouis, Landkreis;459,35
+31.12.2018;10045;      Saarpfalz-Kreis;418,27
+31.12.2018;10046;      St. Wendel, Landkreis;476,07
+31.12.2018;11;  Berlin;891,12
+31.12.2018;11001001;      Berlin-Mitte;39,40
+31.12.2018;11002002;      Berlin-Friedrichshain-Kreuzberg;20,40
+31.12.2018;11003003;      Berlin-Pankow;103,22
+31.12.2018;11004004;      Berlin-Charlottenburg-Wilmersdorf;64,69
+31.12.2018;11005005;      Berlin-Spandau;91,88
+31.12.2018;11006006;      Berlin-Steglitz-Zehlendorf;102,56
+31.12.2018;11007007;      Berlin-Tempelhof-Schöneberg;53,05
+31.12.2018;11008008;      Berlin-Neukölln;44,93
+31.12.2018;11009009;      Berlin-Treptow-Köpenick;167,73
+31.12.2018;11010010;      Berlin-Marzahn-Hellersdorf;61,82
+31.12.2018;11011011;      Berlin-Lichtenberg;52,12
+31.12.2018;11012012;      Berlin-Reinickendorf;89,32
+31.12.2018;12;  Brandenburg;29654,43
+31.12.2018;12051;      Brandenburg an der Havel, Kreisfreie Stadt;229,71
+31.12.2018;12052;      Cottbus, Kreisfreie Stadt;165,63
+31.12.2018;12053;      Frankfurt (Oder), Kreisfreie Stadt;147,85
+31.12.2018;12054;      Potsdam, Kreisfreie Stadt;188,25
+31.12.2018;12060;      Barnim, Landkreis;1479,58
+31.12.2018;12061;      Dahme-Spreewald, Landkreis;2274,50
+31.12.2018;12062;      Elbe-Elster, Landkreis;1899,19
+31.12.2018;12063;      Havelland, Landkreis;1727,31
+31.12.2018;12064;      Märkisch-Oderland, Landkreis;2158,65
+31.12.2018;12065;      Oberhavel, Landkreis;1808,19
+31.12.2018;12066;      Oberspreewald-Lausitz, Landkreis;1223,48
+31.12.2018;12067;      Oder-Spree, Landkreis;2256,75
+31.12.2018;12068;      Ostprignitz-Ruppin, Landkreis;2526,55
+31.12.2018;12069;      Potsdam-Mittelmark, Landkreis;2592,02
+31.12.2018;12070;      Prignitz, Landkreis;2138,55
+31.12.2018;12071;      Spree-Neiße, Landkreis;1656,98
+31.12.2018;12072;      Teltow-Fläming, Landkreis;2104,21
+31.12.2018;12073;      Uckermark, Landkreis;3077,03
+31.12.2018;13;  Mecklenburg-Vorpommern;23293,62
+31.12.2018;13001;      Kreisfreie Stadt Greifswald, Hansestadt;-
+31.12.2018;13002;      Kreisfreie Stadt Neubrandenburg, Stadt;-
+31.12.2018;13003;      Kreisfreie Stadt Rostock, Hansestadt;181,36
+31.12.2018;13004;      Kreisfreie Stadt Schwerin, Landeshauptstadt;130,52
+31.12.2018;13005;      Kreisfreie Stadt Stralsund, Hansestadt;-
+31.12.2018;13006;      Kreisfreie Stadt Wismar, Hansestadt;-
+31.12.2018;13051;      Landkreis Bad Doberan;-
+31.12.2018;13052;      Landkreis Demmin;-
+31.12.2018;13053;      Landkreis Güstrow;-
+31.12.2018;13054;      Landkreis Ludwigslust;-
+31.12.2018;13055;      Landkreis Mecklenburg-Strelitz;-
+31.12.2018;13056;      Landkreis Müritz;-
+31.12.2018;13057;      Landkreis Nordvorpommern;-
+31.12.2018;13058;      Landkreis Nordwestmecklenburg;-
+31.12.2018;13059;      Landkreis Ostvorpommern;-
+31.12.2018;13060;      Landkreis Parchim;-
+31.12.2018;13061;      Landkreis Rügen;-
+31.12.2018;13062;      Landkreis Uecker-Randow;-
+31.12.2018;13071;      Landkreis Mecklenburgische Seenplatte;5495,60
+31.12.2018;13072;      Landkreis Rostock;3431,29
+31.12.2018;13073;      Landkreis Vorpommern-Rügen;3215,41
+31.12.2018;13074;      Landkreis Nordwestmecklenburg;2127,08
+31.12.2018;13075;      Landkreis Vorpommern-Greifswald;3945,56
+31.12.2018;13076;      Landkreis Ludwigslust-Parchim;4766,79
+31.12.2018;14;  Sachsen;18449,96
+31.12.2018;141;    Chemnitz, Regierungsbezirk;-
+31.12.2018;14161;      Chemnitz, Kreisfreie Stadt;-
+31.12.2018;14166;      Plauen, Kreisfreie Stadt;-
+31.12.2018;14167;      Zwickau, Kreisfreie Stadt;-
+31.12.2018;14171;      Annaberg, Landkreis;-
+31.12.2018;14173;      Chemnitzer Land, Landkreis;-
+31.12.2018;14177;      Freiberg, Landkreis;-
+31.12.2018;14178;      Vogtlandkreis;-
+31.12.2018;14181;      Mittlerer Erzgebirgskreis;-
+31.12.2018;14182;      Mittweida, Landkreis;-
+31.12.2018;14188;      Stollberg, Landkreis;-
+31.12.2018;14191;      Aue-Schwarzenberg, Landkreis;-
+31.12.2018;14193;      Zwickauer Land, Landkreis;-
+31.12.2018;142;    Dresden, Regierungsbezirk;-
+31.12.2018;14262;      Dresden, Kreisfreie Stadt;-
+31.12.2018;14263;      Görlitz, Kreisfreie Stadt;-
+31.12.2018;14264;      Hoyerswerda, Kreisfreie Stadt;-
+31.12.2018;14272;      Bautzen, Landkreis;-
+31.12.2018;14280;      Meißen, Landkreis;-
+31.12.2018;14284;      Niederschlesischer Oberlausitzkreis;-
+31.12.2018;14285;      Riesa-Großenhain, Landkreis;-
+31.12.2018;14286;      Löbau-Zittau, Landkreis;-
+31.12.2018;14287;      Sächsische Schweiz, Landkreis;-
+31.12.2018;14290;      Weißeritzkreis;-
+31.12.2018;14292;      Kamenz, Landkreis;-
+31.12.2018;143;    Leipzig, Regierungsbezirk;-
+31.12.2018;14365;      Leipzig, Kreisfreie Stadt;-
+31.12.2018;14374;      Delitzsch, Landkreis;-
+31.12.2018;14375;      Döbeln, Landkreis;-
+31.12.2018;14379;      Leipziger Land, Landkreis;-
+31.12.2018;14383;      Muldentalkreis;-
+31.12.2018;14389;      Torgau-Oschatz, Landkreis;-
+31.12.2018;145;    Chemnitz, Stat. Region;6528,02
+31.12.2018;14511;      Chemnitz, Stadt;221,05
+31.12.2018;14521;      Erzgebirgskreis;1827,91
+31.12.2018;14522;      Mittelsachsen, Landkreis;2116,85
+31.12.2018;14523;      Vogtlandkreis;1412,42
+31.12.2018;14524;      Zwickau, Landkreis;949,78
+31.12.2018;146;    Dresden, Stat. Region;7944,29
+31.12.2018;14612;      Dresden, Stadt;328,48
+31.12.2018;14625;      Bautzen, Landkreis;2395,61
+31.12.2018;14626;      Görlitz, Landkreis;2111,41
+31.12.2018;14627;      Meißen, Landkreis;1454,59
+31.12.2018;14628;      Sächsische Schweiz-Osterzgebirge, Landkreis;1654,19
+31.12.2018;147;    Leipzig, Stat. Region;3977,66
+31.12.2018;14713;      Leipzig, Stadt;297,80
+31.12.2018;14729;      Leipzig, Landkreis;1651,30
+31.12.2018;14730;      Nordsachsen, Landkreis;2028,56
+31.12.2018;15;  Sachsen-Anhalt;20454,31
+31.12.2018;15001;      Dessau-Roßlau, Kreisfreie Stadt;244,71
+31.12.2018;15002;      Halle (Saale), Kreisfreie Stadt;135,03
+31.12.2018;15003;      Magdeburg, Kreisfreie Stadt;201,01
+31.12.2018;15081;      Altmarkkreis Salzwedel;2293,36
+31.12.2018;15082;      Anhalt-Bitterfeld, Landkreis;1453,82
+31.12.2018;15083;      Börde, Landkreis;2366,91
+31.12.2018;15084;      Burgenlandkreis;1413,75
+31.12.2018;15085;      Harz, Landkreis;2104,72
+31.12.2018;15086;      Jerichower Land, Landkreis;1576,94
+31.12.2018;15087;      Mansfeld-Südharz, Landkreis;1448,92
+31.12.2018;15088;      Saalekreis;1433,91
+31.12.2018;15089;      Salzlandkreis;1427,33
+31.12.2018;15090;      Stendal, Landkreis;2423,42
+31.12.2018;15091;      Wittenberg, Landkreis;1930,48
+31.12.2018;151;    Dessau, Stat. Region;-
+31.12.2018;15101;      Dessau, Kreisfreie Stadt;-
+31.12.2018;15151;      Anhalt-Zerbst, Kreis;-
+31.12.2018;15153;      Bernburg, Kreis;-
+31.12.2018;15154;      Bitterfeld, Kreis;-
+31.12.2018;15159;      Köthen, Kreis;-
+31.12.2018;15171;      Wittenberg, Kreis;-
+31.12.2018;152;    Halle, Stat. Region;-
+31.12.2018;15202;      Halle (Saale), Kreisfreie Stadt;-
+31.12.2018;15256;      Burgenlandkreis;-
+31.12.2018;15260;      Mansfelder Land, Kreis;-
+31.12.2018;15261;      Merseburg-Querfurt, Kreis;-
+31.12.2018;15265;      Saalkreis;-
+31.12.2018;15266;      Sangerhausen, Kreis;-
+31.12.2018;15268;      Weißenfels, Kreis;-
+31.12.2018;153;    Magdeburg, Stat. Region;-
+31.12.2018;15303;      Magdeburg, Kreisfreie Stadt;-
+31.12.2018;15352;      Aschersleben-Staßfurt, Kreis;-
+31.12.2018;15355;      Bördekreis;-
+31.12.2018;15357;      Halberstadt, Kreis;-
+31.12.2018;15358;      Jerichower Land, Kreis;-
+31.12.2018;15362;      Ohrekreis;-
+31.12.2018;15363;      Stendal, Kreis;-
+31.12.2018;15364;      Quedlinburg, Kreis;-
+31.12.2018;15367;      Schönebeck, Kreis;-
+31.12.2018;15369;      Wernigerode, Kreis;-
+31.12.2018;15370;      Altmarkkreis Salzwedel, Kreis;-
+31.12.2018;16;  Thüringen;16202,37
+31.12.2018;16051;      Erfurt, krsfr. Stadt;269,91
+31.12.2018;16052;      Gera, krsfr. Stadt;152,18
+31.12.2018;16053;      Jena, krsfr. Stadt;114,77
+31.12.2018;16054;      Suhl, krsfr. Stadt;103,03
+31.12.2018;16055;      Weimar, krsfr. Stadt;84,48
+31.12.2018;16056;      Eisenach, krsfr. Stadt;104,17
+31.12.2018;16061;      Eichsfeld, Kreis;943,07
+31.12.2018;16062;      Nordhausen, Kreis;713,90
+31.12.2018;16063;      Wartburgkreis;1307,44
+31.12.2018;16064;      Unstrut-Hainich-Kreis;979,69
+31.12.2018;16065;      Kyffhäuserkreis;1037,91
+31.12.2018;16066;      Schmalkalden-Meiningen, Kreis;1210,73
+31.12.2018;16067;      Gotha, Kreis;936,08
+31.12.2018;16068;      Sömmerda, Kreis;806,86
+31.12.2018;16069;      Hildburghausen, Kreis;938,42
+31.12.2018;16070;      Ilm-Kreis;843,71
+31.12.2018;16071;      Weimarer Land, Kreis;804,48
+31.12.2018;16072;      Sonneberg, Kreis;433,61
+31.12.2018;16073;      Saalfeld-Rudolstadt, Kreis;1036,03
+31.12.2018;16074;      Saale-Holzland-Kreis;815,24
+31.12.2018;16075;      Saale-Orla-Kreis;1151,30
+31.12.2018;16076;      Greiz, Kreis;845,98
+31.12.2018;16077;      Altenburger Land, Kreis;569,40
+__________
+"zu ""Gebietsfläche"":
+Abweichungen bei den Flächenangaben sind durch Runden der
+Zahlen möglich.
+Aufgrund fachlicher und methodischer Umstellungen in der
+Vermessungsverwaltung auf das ""Amtliche Liegenschaftskatas-
+ter-Informationssystem"" (ALKIS®) ist der Vergleich der
+Flächendaten ab 2016 mit den Flächendaten vorangegangener
+Jahre nur eingeschränkt möglich.
+Baden-Württemberg (Berichtsjahr 1995-2010): Gebietsstand
+01.01.1979
+Baden-Württemberg (ab Berichtsjahr 2011): Gebietsstand
+01.01.2011
+Baden- Württemberg: ohne die Fläche der gemeindefreien Ge-
+biete Rheinau (Ortenaukreis)und des Gutsbezirks Münsingen
+(Landkreis Reutlingen)
+Berlin (1995 bis 2000): bezogen auf den Gebietsstand
+01.01.2001
+Mecklenburg-Vorpommern: ohne die Fläche des gemeindefreien
+Gebietes (§2 Abs. 7 Nr. 1 GewStG)
+Rheinland-Pfalz: Landessumme einschl. des gemeinschaftlichen
+deutsch-luxemburgischen Hoheitsgebiets
+Saarland (ab 2016): einschließlich des gemeinschaftlichen
+deutsch-luxemburgischen Hoheitsgebiets
+Thüringen: Umstellung auf das ""Amtliche Liegenschaftskatas-
+ter-Informationssystem"" (ALKIS®) ab dem Berichtsjahr 2014"
+"© Statistische Ämter des Bundes und der Länder, Deutschland, 2020.
+Dieses Werk ist lizenziert unter der Datenlizenz Deutschland
+- Namensnennung - Version 2.0."
+Stand: 21.03.2020 / 13:36:11

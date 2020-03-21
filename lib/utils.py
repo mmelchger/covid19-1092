@@ -5,45 +5,31 @@ Created on Sat Mar 21 01:00:42 2020
 
 @author: enno
 """
+import datetime
 
 class region():
     """
     Region object.
     """
 
-    def __init__(self, id):
+    def __init__(self, aCountry, aProvince=None, aCity=None):
         """
         Create Region object.
-
-        Parameters
-        ----------
-        id : named Tuple
-            id as used in JHU-Covid19 Dataset:
-                ("Province/State", "Country/Region", "Lat", "Long")
-        name : String
-            Name of Region
-            i.e. "Landkreis Osnabrück"
-        
-        Returns
-        -------
-        None.
-
         """
-        self.Province   = id("Province")
-        self.Country    = id("Country")
-        self.Lat        = id("Lat")
-        self.Long       = id("Long")
-        self.id         = id
-        
         # Empty Init
-        self.Bevoelkerungsdichte = None
-        self.Zeitreihe           = None
-        self.Massnahme           = []
+        self.Province   = aProvince
+        self.Country    = aCountry
+        self.City       = aCity  # auch: Landkreis
+        self.Lat        = None
+        self.Long       = None
 
-
-    def get_id(self):
-        """Get namedTuple with id information."""
-        return self.id
+        self.PopulationDensity = None
+        self.PopulationTotal   = None
+        self.PopulationMale    = None
+        self.PopulationFemale  = None
+        self.RegionIDZensus    = None
+        self.TimeSeries        = None
+        self.Action            = None
 
 
     def get_name(self):
@@ -51,9 +37,15 @@ class region():
         if self.Province is None:
             raise UserWarning("No data set for Name/Province")
         return self.Province
+    
+    def get_country(self):
+        """Get Name of Country."""
+        if self.Country is None:
+            raise UserWarning("No data set for Country")
+        return self.Country
 
 
-    def get_infection(self, aDatetime):
+    def get_NumberInfected(self, aDatetime):
         """
         Get Number of infected Persons at date aDatetime
 
@@ -64,16 +56,55 @@ class region():
 
         returns
         -------
-        int Number of Infected Persons
+        int Total Number of Infected Persons at Datetime including recovered 
+            Persons
 
         """
-        raise NotImplementedError("get_infection is not yet implemented")
+        raise NotImplementedError("get_NumberInfected is not yet implemented")
         #TODO: implement
-
-
-    def set_zeitreihe(self, aDataset):
+    
+    
+    def get_NumberDead(self, aDatetime):
         """
-        Set Zeitreihen Data for Region
+        Get Number of Persons died at Day Datetime.
+
+        Parameters
+        ----------
+        aDatetime : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        int:
+            Total Number of Persons Dead at Datetime
+
+        """
+        raise NotImplementedError("get_NumberDead is not yet implemented")
+        #TODO: Implement
+
+
+    def get_NumberRecovered(self, aDatetime):
+        """
+        Get Number of Persons died at Day Datetime.
+
+        Parameters
+        ----------
+        aDatetime : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        int:
+            Total Number of Persons recovered
+
+        """
+        raise NotImplementedError("get_NumberRecovered is not yet implemented")
+        #TODO: Implement
+
+
+    def set_timeSeries(self, aDataset):
+        """
+        Set Time Series Data for Region
 
         Parameters
         ----------
@@ -85,11 +116,11 @@ class region():
         None.
 
         """
-        raise NotImplementedError("set_zeitreihe is not yet implemented")
+        raise NotImplementedError("set_timeSeries is not yet implemented")
         #TODO: implement
 
 
-    def set_massname(self, aBegin, aName, aEnd=None):
+    def set_action(self, aBegin, aName, aEnd=None):
         """
         Set Maßname in Region.
 
@@ -109,5 +140,22 @@ class region():
         """
         #TODO: find Type of aBegin, update Docstring
         Massname = namedtuple("Massname", ["Begin", "End", "Name"])
-        self.Massnahme.append(Massname(aBegin, aEnd, aName))
+        self.Action.append(Massname(aBegin, aEnd, aName))
+    
+    
+    def set_populationDensity(self, aDensity):
+        """
+        Set membervariable Population Density of Region.
+
+        Parameters
+        ----------
+        aDensity : float
+            Citizen per square kilometer
+
+        Returns
+        -------
+        None.
+
+        """
+        self.PopulationDensity = aDensity
 
