@@ -8,6 +8,8 @@ Created on Sat Mar 21 01:00:42 2020
 import datetime
 import os
 import csv
+from collections import namedtuple
+import requests
 
 class region():
     """
@@ -35,6 +37,7 @@ class region():
         self.PopulationFemale   = None
         self.RegionIDZensus     = None
         self.TimeSeries         = None
+        self.TimeSeriesStart    = None
         self.Area               = None
         
         self.numHospitals       = None
@@ -56,7 +59,36 @@ class region():
         self.PsyTherapie        = None
 
         self.Action             = None
-
+    
+    
+    def printInfo(self):
+        """Print Members."""
+        print("===== Members of Region ====")
+        print("Country: ", self.Country)
+        print("Province: ", self.Province)
+        print("City: ", self.City)
+        print("Population Density per km²: ", self.PopulationDensity)
+        print("Total Population: ", self.PopulationTotal)
+        print("Male Population: ",  self.PopulationMale)
+        print("Female Population: ", self.PopulationFemale)
+        print("Area in km²: ", self.Area)
+        print("Number of Hospitals: ", self.numHospitals)
+        print("Number of Hospital Beds: ", self.numBeds)
+        print("Number of Beds in Augenheilkunde: ", self.Augenheilkunde)
+        print("Number of Beds in Chirurgie: ", self.Chirurgie)
+        print("Number of Beds in Gynäkologie: ", self.Gynaekologie)
+        print("Number of Beds in HNO: ", self.HNO)
+        print("Number of Beds in Dermatologie: ", self.Dermatologie)
+        print("Number of Beds in Innere Medizin: ", self.Innere)
+        print("Number of Beds in Geriatrie: ", self.Geriatrie)
+        print("Number of Beds in Kinderheilkunde: ", self.Kinderheilkunde)
+        print("Number of Beds in Neurologie: ", self.Neurologie)
+        print("Number of Beds in Orthopaedie: ", self.Orthopaedie)
+        print("Number of Beds in Urologie: ", self.Urologie)
+        print("Number of Beds in Andere: ", self.Andere)
+        print("Number of Beds in Kinder Psychologie: ", self.KinderPsy)
+        print("Number of Beds in Psychologie: ", self.Psy)
+        print("Number of Beds in Psycho Therapie: ", self.PsyTherapie)
 
     def get_name(self):
         """Get Name of Province."""
@@ -148,15 +180,15 @@ class region():
 
     def set_action(self, aBegin, aName, aEnd=None):
         """
-        Set Maßname in Region.
+        Set Maßnahme in Region.
 
         Parameters
         ----------
-        aBegin : TYPE
-            DESCRIPTION.
+        aBegin : datetime.date object
+            Date of Begin of Action
         aName : string
             Name to identify
-        aEnd : TYPE, optional
+        aEnd : datetime.date object, optional
             same type as Begin
 
         Returns
@@ -164,9 +196,12 @@ class region():
         None.
 
         """
-        #TODO: find Type of aBegin, update Docstring
-        Massname = namedtuple("Massname", ["Begin", "End", "Name"])
-        self.Action.append(Massname(aBegin, aEnd, aName))
+        assert type(aBegin) == datetime.date
+        assert type(aName) == str
+        if self.Action is None:
+            self.Action = []
+        Massnahme = namedtuple("Massnahme", ["Begin", "End", "Name"])
+        self.Action.append(Massnahme(aBegin, aEnd, aName))
     
     
     def set_populationDensity(self, aDensity):
@@ -185,7 +220,98 @@ class region():
         """
         self.PopulationDensity = aDensity
 
-def parseRegionData():
+
+def parseCountryData():
+    path = r"../doc/"
+    laenderActionsFile = r"Länderdaten_Corona_Maßnahmen.csv"
+    laenderAdditionalInfoFile = r"Länderdaten_Corona.csv"
+    LaenderAction = os.path.join(path, laenderActionsFile)
+    laenderAdd = os.path.join(path, laenderAdditionalInfoFile)
+    
+    countryInfo = []
+    with open(LaenderAction, "r") as f:
+        readObj = csv.DictReader(f)
+        for row in readObj:
+            countryInfo.append(row)
+    countries = [elem["Country"] for elem in countryInfo]
+    
+    additionalInfo = []
+    with open(laenderAdd, "r") as f:
+        readObj = csv.DictReader(f)
+        for row in readObj:
+            additionalInfo.append(row)
+    countriesAdd = [elem["Country"] for elem in additionalInfo]
+    
+    # Load Data for Corona Infections
+    urlCoronaData   = r"https://pomber.github.io/covid19/timeseries.json"
+    response        = requests.get(urlCoronaData)
+    coronaData      = response.json()
+    
+    countryList = []
+    for index, key in enumerate(list(coronaData.keys())):
+        newCountry              = region(key)
+        newCountry.TimeSeries   = coronaData[key]
+        startdate               = coronaData[key][0]["date"]
+        date                    = startdate.split("-")
+        newCountry.TimeSeriesStart = datetime.date(int(date[0]),
+                                                   int(date[1]),
+                                                   int(date[2]))
+        if key in countries:
+            i = countries.index(key)
+            if not countryInfo[i]["School closure (localised)"] == "":
+                beginSchoolLocal        = countryInfo[i]["School closure (localised)"]
+                schoolLocal             = beginSchoolLocal.split("/")
+                newCountry.set_action(datetime.date(int("20"+schoolLocal[2]),
+                                                int(schoolLocal[0]),
+                                                int(schoolLocal[1])),
+                                  "School_closure_localised")
+            if not countryInfo[i]["School closure (national)"] == "":
+                beginSchoolNational     = countryInfo[i]["School closure (national)"]
+                schoolNational          = beginSchoolNational.split("/")
+                newCountry.set_action(datetime.date(int("20"+schoolNational[2]),
+                                                int(schoolNational[0]),
+                                                int(schoolNational[1])),
+                                  "School_closure_national")
+            if not countryInfo[i]["Curfew"] == "":
+                beginCurfew             = countryInfo[i]["Curfew"]
+                dateCurfew              = beginCurfew.split("/")
+                newCountry.Curfew = datetime.date(int("20"+dateCurfew[2]),
+                                                  int(dateCurfew[0]),
+                                                  int(dateCurfew[1]))
+            if not countryInfo[i]["Total number of tests"] == "":
+                newCountry.TotalNumberOfTests = \
+                    int(countryInfo[i]["Total number of tests"])
+            if not countryInfo[i]["Corona tests /1000000 people"] == "":
+                newCountry.CoronaTestsPerCitizen = \
+                    int(countryInfo[i]["Corona tests /1000000 people"])
+        
+        if key in countriesAdd:
+            i = countriesAdd.index(key)
+            if not additionalInfo[i]["Population (2017)"] == "":
+                newCountry.PopulationTotal = \
+                    int(additionalInfo[i]["Population (2017)"])
+            if not additionalInfo[i]["Surface area /km2 (2017)"] == "":
+                newCountry.Area = int(additionalInfo[i]["Surface area /km2 (2017)"])
+            if not additionalInfo[i]["Population density /km2"] == "":
+                newCountry.PopulationDensity = \
+                    float(additionalInfo[i]["Population density /km2"])
+            if not additionalInfo[i]["GDP per capita /US$ (2017)"] == "":
+                newCountry.GDPPerCapita = \
+                    int(additionalInfo[i]["GDP per capita /US$ (2017)"])
+            if not additionalInfo[i]["Physicians /1000 people (2015)"] == "":
+                newCountry.PhysicianDensity = \
+                    float(additionalInfo[i]["Physicians /1000 people (2015)"])
+            if not additionalInfo[i]["Health expenditure per capita /US$ (2016)"] == "":
+                newCountry.HealthExpenditureperCapita = \
+                    float(additionalInfo[i]["Health expenditure per capita /US$ (2016)"])
+            if not additionalInfo[i]["Hospital beds /1000 people (2019?)"] == "":
+                newCountry.HospitalBedsDensity = \
+                    float(additionalInfo[i]["Hospital beds /1000 people (2019?)"])
+        countryList.append(newCountry)
+    return countryList
+
+
+def parseRegionDataGermany():
     """
     Read Statistical Data about regions in Germany.
 

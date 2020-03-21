@@ -9,6 +9,10 @@ import sys
 sys.path.append(r"../lib")
 import utils
 
-regionList = utils.parseRegionData()
+regionList = utils.parseRegionDataGermany()
+regionList[2].printInfo()
+
+countryList = utils.parseCountryData()
+countryList[2].printInfo()
 
 #TODO: Process Data
