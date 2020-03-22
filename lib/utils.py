@@ -160,7 +160,7 @@ class region():
         #TODO: Implement
 
 
-    def set_timeSeries(self, aDataset):
+    def set_TimeSeries(self, aDate, aAge, aSex, aInfected, aDead):
         """
         Set Time Series Data for Region
 
@@ -174,8 +174,85 @@ class region():
         None.
 
         """
-        raise NotImplementedError("set_timeSeries is not yet implemented")
-        #TODO: implement
+        assert type(aDate) == datetime.date
+        assert type(aAge) == int
+        assert type(aSex) == str
+        assert type(aInfected) == int
+        assert type(aDead) == int
+        
+        if self.TimeSeries is None:
+            self.TimeSeries = []
+        existingIndex = [index for index, iDict in enumerate(self.TimeSeries) if iDict["Datum"] == aDate]
+        if len(existingIndex) == 0:
+             newDict = {
+                "Datum": aDate,
+                "W_Age0_Fall":0,
+                "W_Age1_Fall":0,
+                "W_Age2_Fall":0,
+                "W_Age3_Fall":0,
+                "W_Age4_Fall":0,
+                "W_Age5_Fall":0,
+                "W_Age6_Fall":0,
+                "W_Total_Fall":0,
+                "M_Age0_Fall":0,
+                "M_Age1_Fall":0,
+                "M_Age2_Fall":0,
+                "M_Age3_Fall":0,
+                "M_Age4_Fall":0,
+                "M_Age5_Fall":0,
+                "M_Age6_Fall":0,
+                "M_Total_Fall":0,
+                "Total_Fall":0,
+                "unbekannt_Total_Fall":0,
+                "W_Age0_Todesfall":0,
+                "W_Age1_Todesfall":0,
+                "W_Age2_Todesfall":0,
+                "W_Age3_Todesfall":0,
+                "W_Age4_Todesfall":0,
+                "W_Age5_Todesfall":0,
+                "W_Age6_Todesfall":0,
+                "W_Total_Todesfall":0,
+                "M_Age0_Todesfall":0,
+                "M_Age1_Todesfall":0,
+                "M_Age2_Todesfall":0,
+                "M_Age3_Todesfall":0,
+                "M_Age4_Todesfall":0,
+                "M_Age5_Todesfall":0,
+                "M_Age6_Todesfall":0,
+                "M_Total_Todesfall":0,
+                "Total_Todesfall":0,
+                "unbekannt_Total_Todesfall":0
+                }
+             keyFall            = aSex + "_Age" + str(aAge) + "_Fall"
+             keyTodesfall       = aSex + "_Age" + str(aAge) + "_Todesfall"
+             keyTotalFall       = aSex + "_Total_Fall"
+             keyTotalTodesfall  = aSex + "_Total_Todesfall"
+             newDict[keyFall]   = aInfected
+             newDict[keyTodesfall]          = aDead
+             newDict[keyTotalFall]          += aInfected
+             newDict[keyTotalTodesfall]     += aDead
+             newDict["Total_Fall"]          += newDict[keyTotalFall]
+             newDict["Total_Todesfall"]     += newDict[keyTotalTodesfall]
+             self.TimeSeries.append(newDict)
+             return True
+
+        if len(existingIndex) == 1:
+            index = existingIndex[0]
+            keyFall            = aSex + "_Age" + str(aAge) + "_Fall"
+            keyTodesfall       = aSex + "_Age" + str(aAge) + "_Todesfall"
+            keyTotalFall       = aSex + "_Total_Fall"
+            keyTotalTodesfall  = aSex + "_Total_Todesfall"
+            
+            self.TimeSeries[index][keyFall]             = aInfected
+            self.TimeSeries[index][keyTodesfall]        = aDead
+            self.TimeSeries[index][keyTotalFall]        += aInfected
+            self.TimeSeries[index][keyTotalTodesfall]   += aDead
+            self.TimeSeries[index]["Total_Fall"] += \
+                self.TimeSeries[index][keyTotalFall]
+            self.TimeSeries[index]["Total_Todesfall"] += \
+                self.TimeSeries[index][keyTotalTodesfall]
+            return True
+        return False
 
 
     def set_action(self, aBegin, aName, aEnd=None):
@@ -219,6 +296,60 @@ class region():
 
         """
         self.PopulationDensity = aDensity
+
+
+def get_DatasetByID(aRegionList, aID):
+    """
+    Return Dataset specified by ID.
+
+    Parameters
+    ----------
+    aRegionList : List of Region Objects
+    aID : Int/String
+        ID of Province/State,..
+
+    Returns
+    -------
+    True, Region Object specified by ID
+    False, None if ID not in Dataset
+
+    """
+    fDSet = [iRegion for iRegion in aRegionList if iRegion.RegionIDZensus == str(aID)]
+    if len(fDSet) > 1:
+        print("ID is not unique")
+        return True, fDSet
+    elif len(fDSet) == 1:
+        return True, fDSet[0]
+    return False, None
+
+
+def get_DatasetByName(aRegionList, aCountry, aProvince=None, aCity=None):
+    """
+    Returns Dataset from aRegionList specified by Country, Province, City.
+
+    Parameters
+    ----------
+    aCountry : String
+        Country Name.
+    aProvince : String, optional
+        Province/Landkreis Name. The default is None.
+    aCity : String, optional
+        City Name. The default is None.
+
+    Returns
+    -------
+    True, Region Object if Object exists.
+    False, None if no Object exists.
+
+    """
+    fList = [iRegion for iRegion in aRegionList if iRegion.get_country() == aCountry]
+    if aProvince is not None:
+        fList = [iRegion for iRegion in fList if iRegion.Province == aProvince]
+        if aCity is not None:
+            fList = [iRegion for iRegion in fList if iRegion.City == aCity]
+    if len(fList) > 0:
+        return True, fList
+    return False, None
 
 
 def parseCountryData():
@@ -424,4 +555,39 @@ def parseRegionDataGermany():
         newRegion.PsyTherapie        = int(iHospital["PsyTherapie"].replace("-", "0"))
         newRegion.ValidHospital      = not "-" in iHospital.values()
         regionList.append(newRegion)
+    
+    # ==== Parse the RKI Data into the Region List
+    pathData = r"../data/RKI Corona Landkreise"
+    RKIName = "RKI_COVID19.csv"
+    RKIFile = os.path.join(pathData, RKIName)
+    
+    RKIData = []
+    with open(RKIFile, "r") as f:
+        readObj = csv.DictReader(f)
+        for row in readObj:
+            RKIData.append(row)
+    ageEnum = {
+        "A00-A04":0,
+        "A05-A14":1,
+        "A15-A34":2,
+        "A35-A59":3,
+        "A60-A79":4,
+        "A80+":5,
+        "unbekannt":6
+        }
+    for dSet in RKIData:
+        Success, iRegion = get_DatasetByID(regionList, dSet["IdLandkreis"])
+        if Success:
+            TmpDate = dSet["Meldedatum"].split("-")
+            date = datetime.date(int(TmpDate[0]),
+                                 int(TmpDate[1]),
+                                 int(TmpDate[2].split("T")[0]))
+            age = ageEnum[dSet["Altersgruppe"]]
+            iRegion.set_TimeSeries(
+                date,
+                age,
+                dSet["Geschlecht"],
+                int(dSet["AnzahlFall"]),
+                int(dSet["AnzahlTodesfall"])
+                )
     return regionList
